@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+
 const App = () => {
   return (
-    <div>
-      <h1> are kidding me sofiane, you are amazing </h1>
-    </div>
+    <>
+      <Header />
+      <Home />
+    </>
   );
 };
 
