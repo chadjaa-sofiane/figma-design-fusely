@@ -60,6 +60,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|gif|ttf)$/i,
+        use: {
+          loader: "url-loader",
+          options:{
+            limits : 50000
+          }
+        },
+      },
     ],
   },
   plugins: [

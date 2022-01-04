@@ -8,7 +8,9 @@ export const StyledButton = styled.button`
   font-weight: bold;
   font-size: 0.875rem;
   background-color: ${({ color, theme }) =>
-    color == "primary" ? theme.colors.primary[500] : "FFF"};
+    color == "primary" ? theme.colors.primary[400] : "#FFF"};
   color: ${({ color, theme }) =>
-    color == "primary" ? "FFF" : theme.colors.primary[500]};
+    color == "primary" ? "#FFF" : theme.colors.primary[400]};
+  border-radius: 0.125em;
+  border: ${({ theme }) => theme.colors.primary[400]} 1px solid;
 `;
