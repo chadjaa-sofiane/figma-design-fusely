@@ -1,13 +1,15 @@
 import React from "react";
-import styled from "styled-components";
+import { NavBarWrapper } from "./style";
+import Logo from "../../assets/svgs/Logo.svg";
+import Links from "./Links";
 
 const Header = () => {
-  return <NavBarWrapper>NavBar</NavBarWrapper>;
+  return (
+    <NavBarWrapper>
+      <Logo />
+      <Links />
+    </NavBarWrapper>
+  );
 };
-
-const NavBarWrapper = styled.div`
-  background: red;
-  color: white;
-`;
 
 export default Header;

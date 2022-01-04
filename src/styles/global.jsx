@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
    body{
        width: 100vw;
        height: 100vh;
+       max-width: 100%;
        font-size: 16px;
        font-family: "Open Sans";
    }
