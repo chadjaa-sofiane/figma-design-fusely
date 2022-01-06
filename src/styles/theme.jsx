@@ -22,6 +22,17 @@ const theme = {
       100: "hsla(0, 0%, 100%, 1)",
     },
   },
+  fontSizes: {
+    body_lg: "1.25em",
+    body_md: "1.125rem",
+    body_sd: "1rem",
+    xs: "1.75rem",
+    sm: "2.125rem",
+    md: "2.5rem",
+    lg: "3.125rem",
+    xl: "3.75rem",
+    xxl: "5.375rem",
+  },
 };
 
 export default theme;

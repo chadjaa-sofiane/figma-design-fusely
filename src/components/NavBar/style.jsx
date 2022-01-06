@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from "../../styles/theme";
 
 export const NavBarWrapper = styled.div`
   width: 80em;

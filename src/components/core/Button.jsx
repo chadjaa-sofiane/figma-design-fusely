@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+const Button = styled.button`
   background: none;
   border: none;
   outline: none;
@@ -13,4 +13,7 @@ export const StyledButton = styled.button`
     color == "primary" ? "#FFF" : theme.colors.primary[400]};
   border-radius: 0.125em;
   border: ${({ theme }) => theme.colors.primary[400]} 1px solid;
+  cursor: pointer;
 `;
+
+export default Button;
