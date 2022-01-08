@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const buttonThemeProps = ({ theme, variant = "contained" }) => {
+  variant = ["contained", "outlined"].includes(variant) ? variant : "contained";
+  return {
+    color: theme.button[variant].color,
+    backgroundColor: theme.button[variant].backgroundColor,
+    borderColor: theme.button[variant].borderColor,
+  };
+};
+
 const Button = styled.button`
   background: none;
   border: none;
@@ -7,12 +16,10 @@ const Button = styled.button`
   padding: 1em 1.875em;
   font-weight: bold;
   font-size: 0.875rem;
-  background-color: ${({ color, theme }) =>
-    color == "primary" ? theme.colors.primary[400] : "#FFF"};
-  color: ${({ color, theme }) =>
-    color == "primary" ? "#FFF" : theme.colors.primary[400]};
+  background-color: ${(props) => buttonThemeProps(props).backgroundColor};
+  color: ${(props) => buttonThemeProps(props).color};
+  border: ${(props) => buttonThemeProps(props).borderColor} 1px solid;
   border-radius: 0.125em;
-  border: ${({ theme }) => theme.colors.primary[400]} 1px solid;
   cursor: pointer;
 `;
 

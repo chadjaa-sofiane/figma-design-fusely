@@ -10,6 +10,7 @@ export const MainSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 13.75em;
 `;
 export const SectionContent = styled.div`

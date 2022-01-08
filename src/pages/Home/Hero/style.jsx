@@ -5,6 +5,7 @@ export const HeroField = styled.div`
   margin: 2.5em 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 export const HeroContent = styled.div`
   width: 30.5625em;
