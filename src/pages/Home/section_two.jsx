@@ -1,7 +1,7 @@
 import React from "react";
 import { MainSection, SectionContent } from "./style";
 import SectionTwoIllustration from "../../assets/svgs/section_two_illustration.svg";
-import { Title2, Paragraphe } from "../../components/core";
+import { Title2, Paragraphe, Link } from "../../components/core";
 
 const SectionTwo = () => {
   return (
@@ -12,7 +12,7 @@ const SectionTwo = () => {
           Creativity is our second name. We&spos;re full of inventive ideas and
           we&apos;re happy to present them to you.
         </Paragraphe>
-        <a href="#"> Learn More </a>
+        <Link href="#"> Learn More </Link>
       </SectionContent>
       <SectionTwoIllustration />
     </MainSection>

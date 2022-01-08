@@ -1,7 +1,7 @@
 import React from "react";
 import { MainSection, SectionContent } from "./style";
 import SectionOneIllustration from "../../assets/svgs/section_one_illustration.svg";
-import { Title2, Paragraphe } from "../../components/core";
+import { Title2, Paragraphe, Link } from "../../components/core";
 
 const SectionOne = () => {
   return (
@@ -13,7 +13,7 @@ const SectionOne = () => {
           A daily dataset to keep you up to date on subscription market trends
           and what&apos;s happening in your vertical.
         </Paragraphe>
-        <a href="#"> Learn More </a>
+        <Link href="#"> Learn More </Link>
       </SectionContent>
     </MainSection>
   );

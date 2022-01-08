@@ -25,7 +25,7 @@ const colors = {
 const fontSizes = {
   body_lg: "1.25em",
   body_md: "1.125rem",
-  body_sd: "1rem",
+  body_sm: "1rem",
   xs: "1.75rem",
   sm: "2.125rem",
   md: "2.5rem",

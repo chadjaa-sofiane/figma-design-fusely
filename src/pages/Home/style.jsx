@@ -15,6 +15,9 @@ export const MainSection = styled.section`
 `;
 export const SectionContent = styled.div`
   width: 25em;
+  a {
+    display: block;
+  }
   p,
   a {
     margin-top: 1.5em;
