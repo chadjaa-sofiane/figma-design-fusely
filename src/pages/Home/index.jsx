@@ -6,6 +6,7 @@ import SectionThree from "./section_three";
 import SectionTwo from "./section_two";
 import Pricing from "./Pricing";
 import Blogs from "./Blogs";
+import ContactBanner from "./ContactBanner";
 import { MainWrapper } from "./style";
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
         <SectionThree />
         <Pricing />
         <Blogs />
+        <ContactBanner />
+        <br/>
       </MainWrapper>
     </>
   );
