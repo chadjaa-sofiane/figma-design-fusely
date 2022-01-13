@@ -14,8 +14,20 @@ export const FooterContent = styled.div`
   flex-wrap: wrap;
 `;
 
-export const SocialMediaLinks = styled.div`
+export const SocialMediaLinks = styled.span`
+  display: block;
   width: 100%;
   display: flex;
   justify-content: space-between;
+`;
+
+export const FooterBottom = styled.div`
+  width: 100%;
+  margin-top: 4.8425em;
+  margin-bottom: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  svg {
+    width: 3.75em;
+  }
 `;

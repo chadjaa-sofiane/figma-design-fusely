@@ -1,9 +1,16 @@
 import React from "react";
 import FooterLink from "../../../components/FooterLink";
-import { FooterWrapper, FooterContent, SocialMediaLinks } from "./style";
+import {
+  FooterWrapper,
+  FooterContent,
+  SocialMediaLinks,
+  FooterBottom,
+} from "./style";
 import FacebookIcon from "../../../assets/svgs/facebook.svg";
 import TwitterIcon from "../../../assets/svgs/twitter.svg";
 import InstragramIcon from "../../../assets/svgs/instagram.svg";
+import FusleyLogo from "../../../assets/svgs/Logo.svg";
+import { Paragraphe } from "../../../components/core";
 
 const Footer = () => {
   return (
@@ -36,6 +43,12 @@ const Footer = () => {
           ]}
         />
       </FooterContent>
+      <FooterBottom>
+        <FusleyLogo />
+        <Paragraphe type="body_sm">
+          © Fusely 2021. All rights reserved.
+        </Paragraphe>
+      </FooterBottom>
     </FooterWrapper>
   );
 };

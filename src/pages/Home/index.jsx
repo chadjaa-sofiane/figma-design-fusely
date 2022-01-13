@@ -9,8 +9,12 @@ import Blogs from "./Blogs";
 import ContactBanner from "./ContactBanner";
 import { MainWrapper } from "./style";
 import Footer from "./Footer";
+import { useTheme } from "styled-components";
 
 const Home = () => {
+  const theme = useTheme();
+
+  console.log(theme);
   return (
     <>
       <Hero />
