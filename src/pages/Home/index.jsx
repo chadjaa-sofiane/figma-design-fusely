@@ -8,6 +8,7 @@ import Pricing from "./Pricing";
 import Blogs from "./Blogs";
 import ContactBanner from "./ContactBanner";
 import { MainWrapper } from "./style";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
         <Pricing />
         <Blogs />
         <ContactBanner />
-        <br/>
+        <Footer />
+        <br />
       </MainWrapper>
     </>
   );

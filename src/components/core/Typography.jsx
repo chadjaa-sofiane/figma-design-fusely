@@ -35,3 +35,8 @@ export const Paragraphe = styled.p`
   font-size: ${({ type, theme }) =>
     PTypes.includes(type) ? theme.fontSizes[type] : theme.fontSizes["body_md"]};
 `;
+
+export const ParagrapheTitle = styled(Paragraphe).attrs({ type: "body_md" })`
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.neutral["500"]};
+`;

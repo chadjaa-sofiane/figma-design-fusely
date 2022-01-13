@@ -24,7 +24,7 @@ export const BlogCardContent = styled.div`
   min-height: 4.875em;
   p {
     margin-top: 0.375em;
-    font-weight: 400;
+    line-height: 1.5em;
   }
 `;
 

@@ -15,6 +15,7 @@ export const ContactBannerContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   h3 {
     width: 7em;
   }
