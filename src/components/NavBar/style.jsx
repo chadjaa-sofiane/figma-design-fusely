@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const NavBarWrapper = styled.div`
-  width: 80em;
-  max-width: 100%;
-  margin: 2.5em auto;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
 export const LinksField = styled.nav`
   flex: 1;
   display: grid;
@@ -52,4 +42,35 @@ export const ButtonsField = styled.div`
   min-width: 16.125em;
   display: flex;
   justify-content: space-around;
+`;
+
+export const MenuBarBtn = styled.label`
+  display: none;
+`;
+
+export const NavBarContent = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const MenuBtnInput = styled.input``;
+
+export const NavBarWrapper = styled.div`
+  width: 80em;
+  max-width: 100%;
+  margin: 2.5em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    padding: 0 2.5em;
+    ${NavBarContent} {
+      display: none;
+    }
+    ${MenuBarBtn} {
+      display: block;
+    }
+  }
 `;

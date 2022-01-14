@@ -12,9 +12,21 @@ export const MainSection = styled.section`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 13.75em;
+  column-gap: 3em;
+  row-gap: 3.125em;
+  svg {
+    flex: 1 1 25em;
+  }
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    margin-top: 8.75em;
+    svg {
+      order: 2;
+    }
+  }
 `;
 export const SectionContent = styled.div`
-  width: 25em;
+  flex: 1 1 25em;
+  max-width: 100%;
   a {
     display: block;
   }

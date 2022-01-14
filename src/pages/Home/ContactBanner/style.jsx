@@ -8,6 +8,9 @@ export const ContactBannerWrapper = styled.div`
   padding: 5.25em;
   background-color: ${({ theme }) => theme.colors.neutral[500]};
   color: #fff;
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    padding: 1.25em;
+  }
 `;
 
 export const ContactBannerContent = styled.div`
@@ -16,7 +19,16 @@ export const ContactBannerContent = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 1.875em;
   h3 {
     width: 7em;
+  }
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    flex-direction: column;
+    h3 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 0.5em;
+    }
   }
 `;

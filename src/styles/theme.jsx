@@ -34,9 +34,16 @@ const fontSizes = {
   xxl: "5.375rem",
 };
 
+const breakPoints = {
+  mobile: "26.75em",
+  tablet: "48em",
+  desktop: "90em",
+};
+
 const theme = {
   colors,
   fontSizes,
+  breakPoints,
   button: {
     contained: {
       color: "#FFF",

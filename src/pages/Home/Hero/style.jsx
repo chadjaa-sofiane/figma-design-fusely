@@ -6,11 +6,18 @@ export const HeroField = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 3em;
+  svg {
+    flex: 1 1 25em;
+  }
 `;
 export const HeroContent = styled.div`
-  width: 30.5625em;
+  flex: 0 1 30.5625em;
   max-width: 100%;
   margin: 2.5625em 0;
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    flex-grow: 1;
+  }
   p,
   button {
     margin-top: 1.875em;

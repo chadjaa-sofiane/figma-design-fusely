@@ -1,15 +1,27 @@
 import React from "react";
-import { NavBarWrapper } from "./style";
 import Logo from "../../assets/svgs/Logo.svg";
 import Links from "./Links";
 import Buttons from "./Buttons";
+import MenuBurgerIcon from "../../assets/svgs/burger_icon.svg";
+import {
+  NavBarWrapper,
+  MenuBarBtn,
+  NavBarContent,
+  MenuBtnInput,
+} from "./style";
 
 const Header = () => {
   return (
     <NavBarWrapper>
+      <MenuBtnInput type="checkbox" id="menu_btn" hidden />
       <Logo />
-      <Links />
-      <Buttons />
+      <NavBarContent>
+        <Links />
+        <Buttons />
+      </NavBarContent>
+      <MenuBarBtn htmlFor="menu_btn">
+        <MenuBurgerIcon />
+      </MenuBarBtn>
     </NavBarWrapper>
   );
 };
