@@ -17,8 +17,8 @@ const BlogCard = ({ src = "", title, excerpt }) => {
       <BlogCardContent>
         <BlogCardTitle>{title}</BlogCardTitle>
         <Paragraphe type="body_sm"> {excerpt} </Paragraphe>
+        <Link href="#"> Read more </Link>
       </BlogCardContent>
-      <Link href="#"> Read more </Link>
     </BlogCardWrapper>
   );
 };
