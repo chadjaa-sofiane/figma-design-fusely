@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const NavBarHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    flex: 1;
+    padding: 0 2.5em;
+  }
+`;
+
 export const LinksField = styled.nav`
   flex: 1;
   display: grid;
@@ -41,11 +50,17 @@ export const LinksField = styled.nav`
 export const ButtonsField = styled.div`
   min-width: 16.125em;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 1em;
 `;
 
 export const MenuBarBtn = styled.label`
+  cursor: pointer;
   display: none;
+  #close_icon_svg__close_icon {
+    width: 0;
+    opacity: 0;
+  }
 `;
 
 export const NavBarContent = styled.div`
@@ -53,21 +68,56 @@ export const NavBarContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  transition: opacity 200ms ease-in;
 `;
 
 export const MenuBtnInput = styled.input``;
 
 export const NavBarWrapper = styled.div`
+  position: relative;
   width: 80em;
   max-width: 100%;
   margin: 2.5em auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
-    padding: 0 2.5em;
+  background-color: #fff;
+  ${MenuBtnInput}:checked ~ & {
     ${NavBarContent} {
-      display: none;
+      visibility: visible;
+      opacity: 1;
+    }
+    ${MenuBarBtn} {
+      #burger_icon_svg__burger_icon {
+        width: 0;
+        opacity: 0;
+      }
+      #close_icon_svg__close_icon {
+        width: unset;
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
+    padding: 0;
+    ${NavBarContent} {
+      position: absolute;
+      top: calc(100% + 2.844em);
+      width: 100%;
+      visibility: hidden;
+      opacity: 0;
+      flex-direction: column;
+      ${LinksField} {
+        ul {
+          padding: 3.75em 0;
+          flex-direction: column;
+          row-gap: 1.875em;
+        }
+      }
+      ${ButtonsField} {
+        margin-top: 10.625em;
+      }
     }
     ${MenuBarBtn} {
       display: block;

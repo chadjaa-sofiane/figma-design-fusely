@@ -11,6 +11,6 @@ export const PricingWrapper = styled.div`
 export const PricesCardContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(21em, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(22em, 100%), 1fr));
   margin-top: 5.625em;
 `;
