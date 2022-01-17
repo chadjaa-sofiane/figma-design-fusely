@@ -5,7 +5,9 @@ import {
   FooterContent,
   SocialMediaLinks,
   FooterBottom,
+  FooterBackground
 } from "./style";
+import ContactBanner from "./ContactBanner";
 import FacebookIcon from "../../../assets/svgs/facebook.svg";
 import TwitterIcon from "../../../assets/svgs/twitter.svg";
 import InstragramIcon from "../../../assets/svgs/instagram.svg";
@@ -15,6 +17,8 @@ import { Paragraphe } from "../../../components/core";
 const Footer = () => {
   return (
     <FooterWrapper>
+      <FooterBackground />
+      <ContactBanner />
       <FooterContent>
         <FooterLink
           title="Product"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Title3, Button } from "../../../components/core";
+import { Title3, Button } from "../../../../components/core";
 import { ContactBannerWrapper, ContactBannerContent } from "./style";
 
 const ContactBanner = () => {
