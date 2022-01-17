@@ -7,4 +7,10 @@ export const PartnersWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: ${({ theme }) => theme.breakPoints["mobile"]}) {
+    justify-content: center;
+    column-gap: 1.5em;
+    row-gap: 2em;
+  }
 `;

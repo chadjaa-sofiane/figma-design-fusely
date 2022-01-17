@@ -11,6 +11,9 @@ const Container = styled.div`
   @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
     padding: 0 2.5em;
   }
+  @media (max-width: ${({ theme }) => theme.breakPoints["mobile"]}) {
+    padding: 0 1.25em;
+  }
 `;
 
 export default Container;

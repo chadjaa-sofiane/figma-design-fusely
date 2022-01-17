@@ -12,6 +12,11 @@ export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: ${({theme}) => theme.breakPoints["mobile"]} ){
+    column-gap: 5.875em;
+    justify-content: unset;
+    row-gap: 3.75em;
+  }
 `;
 
 export const SocialMediaLinks = styled.span`
@@ -24,7 +29,6 @@ export const SocialMediaLinks = styled.span`
 export const FooterBottom = styled.div`
   width: 100%;
   margin-top: 4.8425em;
-  margin-bottom: 2.5em;
   display: flex;
   justify-content: space-between;
   svg {
