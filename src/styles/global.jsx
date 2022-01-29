@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
        height: 100vh;
        max-width: 100%;
        font-size: 16px;
+       background-color: ${({ theme }) => theme.colors.bg};
        font-family: "Open Sans";
    }
 `;

@@ -45,5 +45,6 @@ export const BlogCardContent = styled.div`
 
 export const BlogCardTitle = styled.p`
   font-size: 1.375rem;
+  color: ${({ theme }) => theme.colors.titleColor};
   font-weight: 600;
 `;

@@ -5,7 +5,7 @@ import { ButtonsField } from "./style";
 function Buttons() {
   return (
     <ButtonsField>
-      <Button variant="outlined"> Log In </Button>
+      <Button variant="outlined">Log In</Button>
       <Button> Get Started </Button>
     </ButtonsField>
   );

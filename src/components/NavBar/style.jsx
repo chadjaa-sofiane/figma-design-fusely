@@ -68,7 +68,7 @@ export const NavBarContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.bg};
   transition: opacity 200ms ease-in;
 `;
 
@@ -82,7 +82,7 @@ export const NavBarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.bg};
   ${MenuBtnInput}:checked ~ & {
     ${NavBarContent} {
       visibility: visible;

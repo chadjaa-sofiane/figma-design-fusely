@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card } from "../core/Card";
 
 export const PriceCardContainer = styled(Card)`
-  padding: 4.375em 0;
+  padding: ${({ variant }) => (variant === "contained" ? "4.375em" : "2.875em")} 0;
   text-align: center;
   p {
     color: inherit;
@@ -15,9 +15,10 @@ export const PriceCardContainer = styled(Card)`
 export const PriceText = styled.p`
   font-weight: bold;
   font-size: ${({ theme }) => theme.fontSizes["lg"]};
-  margin-top: 1.875em;
+  margin-top: 0.875em;
   color: ${({ theme, variant }) =>
-    variant === "none" ? theme.colors.neutral[500] : theme.colors.neutral[100]};
+    variant === "none" ?  theme.colors.neutral[500] : theme.colors.neutral[100]};
+    
   span {
     font-size: ${({ theme }) => theme.fontSizes["body_sd"]};
     font-weight: lighter;

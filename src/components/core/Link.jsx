@@ -4,5 +4,5 @@ export const Link = styled.a`
   text-decoration: none;
   font-size: ${({ theme }) => theme.fontSizes["body_md"]};
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.neutral[500]};
+  color: ${({ theme }) => theme.link.color};
 `;

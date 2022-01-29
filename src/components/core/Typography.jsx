@@ -5,6 +5,7 @@ import styled from "styled-components";
 // }
 const TitlesCommonStyle = styled.h1`
   font-family: "Playfair Display";
+  color: ${({ theme }) => theme.colors.titleColor};
 `;
 
 export const Title1 = styled(TitlesCommonStyle)`

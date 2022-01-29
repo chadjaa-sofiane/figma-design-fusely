@@ -41,7 +41,12 @@ const breakPoints = {
 };
 
 const theme = {
-  colors,
+  type: "light",
+  colors: {
+    ...colors,
+    bg: "hsl(0, 0%, 100%)",
+    titleColor: colors.neutral[500],
+  },
   fontSizes,
   breakPoints,
   button: {
@@ -56,6 +61,49 @@ const theme = {
       borderColor: colors.primary[400],
     },
   },
+  link: {
+    color: colors.neutral[500],
+  },
+  card: {
+    contained: {
+      backgroundColor: colors.primary[400],
+      color: colors.neutral[100],
+    },
+    none: {
+      backgroundColor: colors.neutral[100],
+      color: colors.neutral[400],
+    },
+  },
 };
 
-export default theme;
+const darkTheme = {
+  type: "dark",
+  ...theme,
+  colors: {
+    ...colors,
+    bg: "hsla(247, 21%, 8%, 1)",
+    titleColor: "hsl(0, 0%, 100%)",
+  },
+  button: {
+    ...theme.button,
+    outlined: {
+      ...theme.button.outlined,
+      backgroundColor: "transparent",
+    },
+  },
+  link: {
+    color: "#FFF",
+  },
+  card: {
+    ...theme.card,
+    none: {
+      ...theme.card.none,
+      backgroundColor: colors.neutral[500],
+    },
+  },
+};
+
+export default {
+  dark: darkTheme,
+  light: theme,
+};
