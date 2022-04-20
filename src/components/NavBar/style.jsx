@@ -19,6 +19,8 @@ export const LinksField = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: ${({theme}) => theme.colors.bg  };
+    z-index: 1;
     cursor: pointer;
     li {
       position: relative;
