@@ -1,12 +1,14 @@
 import React from "react";
-import { MainSection, SectionContent } from "./style";
+import { MainSection, SectionContent, SectionImageField } from "./style";
 import SectionThreeIllustration from "../../assets/svgs/section_three_illustration.svg";
 import { Title2, Paragraphe, Link } from "../../components/core";
 
 const SectionThree = () => {
   return (
     <MainSection>
-      <SectionThreeIllustration />
+      <SectionImageField>
+        <SectionThreeIllustration />
+      </SectionImageField>
       <SectionContent>
         <Title2>Professional Team</Title2>
         <Paragraphe>

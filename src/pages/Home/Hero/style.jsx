@@ -12,7 +12,7 @@ export const HeroField = styled.div`
   }
 `;
 export const HeroContent = styled.div`
-  flex: 0 1 30.5625em;
+  flex: 0 1 20em;
   max-width: 100%;
   margin: 2.5625em 0;
   @media (max-width: ${({ theme }) => theme.breakPoints["tablet"]}) {
@@ -21,5 +21,12 @@ export const HeroContent = styled.div`
   p,
   button {
     margin-top: 1.875em;
+  }
+`;
+
+export const HeroImageField = styled.div`
+  max-width: 100%;
+  svg {
+    max-width: 100%;
   }
 `;

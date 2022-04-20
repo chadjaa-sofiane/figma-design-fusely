@@ -64,9 +64,6 @@ module.exports = {
         test: /\.(png|jpg|gif|ttf)$/i,
         use: {
           loader: "url-loader",
-          options:{
-            limits : 50000
-          }
         },
       },
     ],
@@ -79,7 +76,7 @@ module.exports = {
   ],
   devServer: {
     host: "localhost",
-    port: 3000,
+    port: 3001,
     historyApiFallback: true,
     open: true,
   },

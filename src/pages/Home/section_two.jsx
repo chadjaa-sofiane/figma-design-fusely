@@ -1,5 +1,5 @@
 import React from "react";
-import { MainSection, SectionContent } from "./style";
+import { MainSection, SectionContent, SectionImageField } from "./style";
 import SectionTwoIllustration from "../../assets/svgs/section_two_illustration.svg";
 import { Title2, Paragraphe, Link } from "../../components/core";
 
@@ -14,7 +14,9 @@ const SectionTwo = () => {
         </Paragraphe>
         <Link href="#"> Learn More </Link>
       </SectionContent>
-      <SectionTwoIllustration />
+      <SectionImageField>
+        <SectionTwoIllustration />
+      </SectionImageField>
     </MainSection>
   );
 };

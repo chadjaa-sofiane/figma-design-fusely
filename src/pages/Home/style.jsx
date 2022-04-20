@@ -35,3 +35,10 @@ export const SectionContent = styled.div`
     margin-top: 1.5em;
   }
 `;
+
+export const SectionImageField = styled.div`
+  max-width: 100%;
+  svg {
+    max-width: 100%;
+  }
+`;
