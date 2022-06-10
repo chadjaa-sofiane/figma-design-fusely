@@ -1,19 +1,20 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { join } = require("path");
+const WebpackBundleAnalyzer = require("webpack-bundle-analyzer");
+const { resolve } = require("path");
 
 const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
-  devtool: !isProduction ? "source-map" : false,
+  devtool: !isProduction ? "inline-source-map" : false,
   mode: isProduction ? "production" : "development",
   target: "web",
-  entry: "./src/index.jsx",
+  // eslint-disable-next-line no-undef
+  entry: resolve(__dirname, "./src/index.jsx"),
   output: {
     // eslint-disable-next-line no-undef
-    path: join(__dirname, "dist"),
-    filename: "bundle.[hash].js",
-    publicPath: "/",
+    path: resolve(__dirname, "dist"),
+    filename: "bundle.[chunkhash].js",
   },
   resolve: {
     extensions: [".jsx", ".js", ".json"],
@@ -73,11 +74,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
+    new WebpackBundleAnalyzer.BundleAnalyzerPlugin({
+      analyzerMode: "static",
+      openAnalyzer: false,
+    }),
   ],
   devServer: {
-    host: "localhost",
-    port: 3001,
     historyApiFallback: true,
     open: true,
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  }
 };

@@ -16,5 +16,6 @@
     "linebreak-style": ["error", "windows"],
     "quotes": ["error", "double"],
     "no-unused-vars": "error"
-  }
+  },
+  "files": ["src"]
 }
