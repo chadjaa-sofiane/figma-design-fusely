@@ -19,7 +19,7 @@ export const LinksField = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: ${({theme}) => theme.colors.bg  };
+    /* background-color: ${({theme}) => theme.colors.bg  }; */
     z-index: 1;
     cursor: pointer;
     li {
@@ -70,7 +70,7 @@ export const NavBarContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.bg};
+  /* background-color: ${({ theme }) => theme.colors.bg}; */
   transition: opacity 200ms ease-in;
 `;
 
@@ -84,7 +84,7 @@ export const NavBarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.bg};
+  /* background-color: ${({ theme }) => theme.colors.bg}; */
   ${MenuBtnInput}:checked ~ & {
     ${NavBarContent} {
       visibility: visible;
