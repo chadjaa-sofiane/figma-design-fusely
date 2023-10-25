@@ -11,4 +11,6 @@ const cardThemeProps = ({ variant = "none", theme }) => {
 export const Card = styled.div`
   background-color: ${(props) => cardThemeProps(props).backgroundColor};
   color: ${(props) => cardThemeProps(props).color};
+  transition: background-color 600ms;
+  transition-timing-function: cubic-bezier(0.001, 0.001, 0.999, 1);
 `;

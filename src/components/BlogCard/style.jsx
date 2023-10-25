@@ -47,4 +47,6 @@ export const BlogCardTitle = styled.p`
   font-size: 1.375rem;
   color: ${({ theme }) => theme.colors.titleColor};
   font-weight: 600;
+  transition: color 600ms;
+  transition-timing-function: cubic-bezier(0.001, 0.001, 0.999, 1);
 `;

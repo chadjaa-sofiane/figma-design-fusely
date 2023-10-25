@@ -6,6 +6,8 @@ import styled from "styled-components";
 const TitlesCommonStyle = styled.h1`
   font-family: "Playfair Display";
   color: ${({ theme }) => theme.colors.titleColor};
+  transition: color 600ms;
+  transition-timing-function: cubic-bezier(0.001, 0.001, 0.999, 1);
 `;
 
 export const Title1 = styled(TitlesCommonStyle)`
@@ -35,6 +37,7 @@ export const Paragraphe = styled.p`
   color: ${({ theme }) => theme.colors.neutral["300"]};
   font-size: ${({ type, theme }) =>
     PTypes.includes(type) ? theme.fontSizes[type] : theme.fontSizes["body_md"]};
+  transition: color 300ms ease-in;
 `;
 
 export const ParagrapheTitle = styled(Paragraphe).attrs({ type: "body_md" })`

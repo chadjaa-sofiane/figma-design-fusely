@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Title1, Paragraphe, Button } from "../../../components/core";
 import { HeroField, HeroContent, HeroImageField } from "./style";
-import HeroImage from "../../../assets/svgs/hero_image.svg";
+import HeroImage from "../../../assets/svgs/Hero_image.svg";
 import gsap from "gsap";
 import scrollTrigger from "gsap/ScrollTrigger";
 
