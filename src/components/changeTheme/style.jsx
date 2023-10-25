@@ -40,7 +40,7 @@ export const ChangeThemeContainer = styled.div`
 
 const ThemeAnimation = {
   dark: css`
-    scale: 40;
+    scale: 50;
     transition: scale 1000ms ease-in;
   `,
   light: css`
